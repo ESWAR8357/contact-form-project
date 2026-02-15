@@ -30,6 +30,10 @@ app.post("/contact", (req, res) => {
     res.json({ message: "Thank you for contacting us! We'll get back to you soon." });
 });
 
+app.get("/", (req, res) => {
+    res.send("Backend is running successfully 🚀");
+});
+
 app.listen(PORT, () => {
     console.log(`Server running on http://localhost:${PORT}`);
 });
